@@ -10,5 +10,7 @@ EclipseKeys.executionEnvironment := Some(EclipseExecutionEnvironment.JavaSE16)
 
 EclipseKeys.withSource := true
 
-libraryDependencies += "org.scalatest" % "scalatest_2.10" % "1.9.1" % "test"
-
+libraryDependencies ++= Seq(
+	"org.scalatest" % "scalatest_2.10" % "1.9.1" % "test",
+	"junit" % "junit" % "4.11" % "test"
+)
