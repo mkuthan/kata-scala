@@ -2,10 +2,7 @@ package kata.sort
 
 import org.scalatest.FlatSpec
 import org.scalatest.prop.TableDrivenPropertyChecks
-import org.junit.runner.RunWith
-import org.scalatest.junit.JUnitRunner
 
-@RunWith(classOf[JUnitRunner])
 class SortSpec extends FlatSpec with TableDrivenPropertyChecks {
 
   val lists = Table(

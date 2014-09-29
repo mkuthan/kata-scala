@@ -1,11 +1,8 @@
 package kata
 
-import org.junit.runner.RunWith
 import org.scalatest.FlatSpec
 import org.scalatest.prop.TableDrivenPropertyChecks
-import org.scalatest.junit.JUnitRunner
 
-@RunWith(classOf[JUnitRunner])
 class NthFrequencySpec extends FlatSpec with TableDrivenPropertyChecks {
 
   val words = Table(
@@ -21,7 +18,7 @@ class NthFrequencySpec extends FlatSpec with TableDrivenPropertyChecks {
         assert(result === expected)
     }
   }
-  
+
   "For invalid Nth" should "throw an exception" in {
     intercept[NoSuchElementException] {
       NthFrequency.nthFrequency("abc", 3)

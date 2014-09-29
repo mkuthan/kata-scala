@@ -1,11 +1,8 @@
 package kata.math
 
-import org.junit.runner.RunWith
 import org.scalatest.FlatSpec
 import org.scalatest.prop.TableDrivenPropertyChecks
-import org.scalatest.junit.JUnitRunner
 
-@RunWith(classOf[JUnitRunner])
 class FibonacciSpec extends FlatSpec with TableDrivenPropertyChecks {
 
   val fibonaciSeries = Table(

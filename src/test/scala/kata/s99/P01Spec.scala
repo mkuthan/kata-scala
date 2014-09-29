@@ -1,10 +1,7 @@
 package kata.s99
 
-import org.junit.runner.RunWith
 import org.scalatest.FlatSpec
-import org.scalatest.junit.JUnitRunner
 
-@RunWith(classOf[JUnitRunner])
 class P01Spec extends FlatSpec {
 
   "For non-empty list" should "return the last element" in {

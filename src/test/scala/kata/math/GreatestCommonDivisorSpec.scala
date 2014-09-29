@@ -1,12 +1,8 @@
 package kata.math
 
-import scala.annotation.tailrec
-import org.junit.runner.RunWith
 import org.scalatest.FlatSpec
 import org.scalatest.prop.TableDrivenPropertyChecks
-import org.scalatest.junit.JUnitRunner
 
-@RunWith(classOf[JUnitRunner])
 class GreatestCommonDivisorSpec extends FlatSpec with TableDrivenPropertyChecks {
 
   val numbers = Table(
